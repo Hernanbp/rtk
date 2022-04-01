@@ -39,7 +39,12 @@ export const Products = () => {
               </div>
               <div className="card-body">
                 <p>{product.category}</p>
-                {product.title.substring(0, 60)}
+                <h3>{product.title.substring(0, 60)}</h3>
+                <p>{product.description.substring(0, 120)}</p>
+                <div className="card-bot">
+                  <button>Add to cart</button>
+                  <p>${product.price}</p>
+                </div>
               </div>
             </div>
           ))

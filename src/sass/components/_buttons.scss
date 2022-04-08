@@ -1,0 +1,4 @@
+.btn-primary {
+  @include btn($primary, white);
+  font-weight: 500;
+}

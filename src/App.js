@@ -1,16 +1,10 @@
-import { Filters } from "./components/Filters";
-import { Products } from "./components/Products";
-import { Header } from "./components/header/Header";
-import "./App.css";
+import { AppRouter } from "./routers/AppRouter";
+import "./sass/styles.scss";
 
 export const App = () => {
   return (
-    <>
-      <div className="app">
-        <Header />
-        <Filters />
-        <Products />
-      </div>
-    </>
+    <div>
+      <AppRouter />
+    </div>
   );
 };

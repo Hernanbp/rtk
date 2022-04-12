@@ -20,14 +20,20 @@
     border-bottom: 1px solid #e7e7e9;
     li {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 1em;
+      padding-left: 1em;
+      height: 65px;
       border: 1px solid #e7e7e9;
       background: #fff;
       transition: 0.1s ease-in-out;
       font-size: 0.875rem;
       font-weight: 600;
       cursor: pointer;
+      img {
+        width: 20%;
+        object-fit: cover;
+      }
       &:hover {
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
       }

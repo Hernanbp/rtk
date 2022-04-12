@@ -1,0 +1,33 @@
+.loginform {
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  h2 {
+    margin-bottom: 1em;
+  }
+  label {
+    font-size: 0.875rem;
+    margin-bottom: 0.25em;
+  }
+  input {
+    padding: 0.8em;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    margin-bottom: 0.5em;
+    &:focus {
+      outline: 2px solid $primary-50;
+      border: 1px solid $primary;
+    }
+  }
+  button {
+    margin-top: 0.5em;
+  }
+}

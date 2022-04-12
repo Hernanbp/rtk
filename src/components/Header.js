@@ -1,12 +1,16 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Login } from "./Login";
 
 export const Header = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <header>
       <div className="container">
         <nav>
           <h2>
-            Easy<span>Food</span>
+            App<span>Food</span>
           </h2>
           <ul>
             <li>
@@ -17,9 +21,13 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-        <Link to="login">
-          <button className="btn-primary">Login</button>
-        </Link>
+        <button
+          onClick={() => setIsLoggedIn(!isLoggedIn)}
+          className="btn-primary"
+        >
+          Login
+        </button>
+        {isLoggedIn ? <Login /> : null}
       </div>
     </header>
   );

@@ -1,0 +1,11 @@
+.menu-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: grid;
+  grid-gap: 36px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  padding: 0 72px;
+}

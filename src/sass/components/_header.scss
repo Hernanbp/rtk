@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  span {
+    color: $primary;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}

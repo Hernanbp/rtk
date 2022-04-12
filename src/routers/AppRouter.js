@@ -1,12 +1,19 @@
-import { Routes, Route } from "react-router-dom";
-import { Login } from "../pages/Login";
-import { Main } from "../pages/Main";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Header } from "../components/Header";
+import { Home } from "../components/Home";
+import { Login } from "../components/Login";
+import { Menu } from "../components/Menu";
 
 export const AppRouter = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/auth/*" element={<Login />} />
-    </Routes>
+    <div>
+      <Header />
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="*" element={<Navigate replace to="/" />} />
+      </Routes>
+    </div>
   );
 };

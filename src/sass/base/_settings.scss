@@ -1,19 +1,19 @@
-$primary: #ff686b;
-$secondary-dark: #282828;
+$primary: #55d096;
+$secondary-dark: #221a15;
 $bgwhite: #f8f7ff;
 
 @mixin btn($bgc, $color) {
   background-color: $bgc;
   color: $color;
-  padding: 0.5rem 1.8em;
+  padding: 0.8rem 1.8em;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   &:hover {
-    background-color: darken($bgc, 10%);
+    background-color: darken($bgc, 5%);
   }
   &:active {
-    background-color: darken($bgc, 20%);
+    background-color: darken($bgc, 10%);
   }
 }

@@ -3,10 +3,8 @@
 @import "./base/settings";
 
 //components
+@import "./components/header";
 @import "./components/buttons";
-@import "./components/form";
+@import "./components/menu";
+@import "./components/categories";
 @import "./components/card";
-
-//layout
-@import "./layout/header";
-@import "./layout/explorer";
